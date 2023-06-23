@@ -6,6 +6,7 @@
   --font : 'Edu NSW ACT Foundation', cursive;
   --font2 : 'M PLUS Rounded 1c', sans-serif;
   --font3 : font-family: 'Rowdies', cursive;
+  --deadpoolColor : #820000;
 }
 
 .firstPage{
@@ -49,7 +50,7 @@
 .navbar{
   display: flex;
   justify-content: end;
-  min-height: 100vh;
+  min-height: 20vh;
   margin-right: 2rem;
   margin-top: 2rem;
   position: fixed;
@@ -91,4 +92,114 @@
 
 .home h3, h2{
   font-size: 2rem;
+}
+
+
+/* --About-- */
+
+.about{
+  min-height: 100vh;
+  background: url(./Assets/About--.jpeg);
+  background-size: 100% 100%;
+  color: black;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.about > p {
+  font-size: 1rem;
+  width: 50%;
+  margin-right: 5rem;
+  
+}
+
+
+/* --Projects-- */
+
+.projects{
+  min-height: 100vh;
+  background-image: url(./Assets/projects.webp);
+  background-repeat: no-repeat;
+  background-size: 70% ;
+  display: flex;
+  justify-content: end;
+}
+
+.contents{
+  width: 50%;
+  min-height: 100vh;
+  background-color: var(--deadpoolColor);
+}
+
+/* --Resume-- */
+
+.resume{
+  min-height: 100vh;
+  background: url(./Assets/resume.jpeg);
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.resume > div {
+  background-color: red;
+  height: 15rem;
+  aspect-ratio: 1;
+  cursor: pointer;
+  transform: rotate(80deg);
+  margin-bottom: 5rem;
+  margin-right: 3rem;
+  opacity: 0;
+}
+
+/* --contacts-- */
+
+.contacts{
+  min-height: 50vh;
+  background-color: var(--deadpoolColor);
+  display: flex;
+  flex-direction: column;
+  align-items: center   ;
+}
+.horizontal-line::before{
+  content: "";
+  display: block;
+  background-color: #ffffff;
+  height: 2px;
+  width: 130px;
+  position: absolute;
+  top: 35%;
+  left: 0;
+}
+
+.horizontal-line{
+  margin-top: 2rem;
+  font-size: 2rem;
+  height: 5rem;
+  min-width: 38rem;
+  text-align: center;
+  position: relative;
+}
+
+.horizontal-line::after{
+  content: "";
+  display: block;
+  background-color: #ffffff;
+  height: 2px;
+  width: 130px;
+  position: absolute;
+  top: 35%;
+  right: 0;
+}
+
+#social-accounts{
+  display: flex;
+  gap: 7rem;
+  margin-top: 3rem;
+}
+
+.socials{
+  font-size: 3rem;
 }

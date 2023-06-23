@@ -2,7 +2,8 @@ import { useState, useEffect } from 'react'
 import { CSSTransition } from 'react-transition-group';
 import './App.css'
 import Animation from './components/Animation'
-import NavBar from './components/NavBar'
+import MainApp from './components/MainApp';
+// import NavBar from './components/NavBar'
 
 
 function App() {
@@ -25,7 +26,7 @@ function App() {
         <Animation display={display} animate={isShown} handleChange={handleChange} />
       </CSSTransition>
       
-      {display && <NavBar />}
+      {display && <MainApp />}
 
     </div>
   );

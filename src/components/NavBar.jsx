@@ -1,5 +1,6 @@
 import React from "react";
-import Home from "./Home";
+// import Home from "./Home";
+// import About from "./About";
 
 const NavBar = () => {
     return (
@@ -13,7 +14,8 @@ const NavBar = () => {
                 <li><a href="/">Contact</a></li>
             </ul>
         </nav>
-        <Home />
+        {/* <Home />
+        <About /> */}
         </>
     )
 }
